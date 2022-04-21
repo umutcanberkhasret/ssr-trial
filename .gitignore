@@ -33,3 +33,10 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# package-lock.json
+package-lock.json
+
+# firebase-hosting
+.firebase
+

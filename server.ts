@@ -1,10 +1,10 @@
+// After a change, run tsc server.ts to make sure you have the updated version translated into js
+
 import { https } from "firebase-functions";
 import next from "next";
 
-const isDev = process.env.NEXT_PUBLIC_NODE_ENV !== "production";
-
 const server = next({
-  dev: isDev,
+  dev: false,
   conf: { distDir: ".next" },
 });
 
