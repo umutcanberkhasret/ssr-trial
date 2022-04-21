@@ -1,14 +1,19 @@
 {
   "name": "ssr-trial",
   "version": "0.1.0",
+  "main": "server.ts",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "out": "next build && next export",
+    "deploy": "firebase deploy --only functions,hosting",
+    "start": "next start"
   },
   "dependencies": {
+    "firebase": "^9.6.11",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.20.1",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
